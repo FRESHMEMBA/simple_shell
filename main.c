@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * main - Starting point of the program.
  * Return: 0 on success.
  */
@@ -17,11 +17,13 @@ int main(void)
 		/*Exits the program if getline returned -1*/
 		if (n == -1)
 		{
+			printf("\n");
 			return (-1);
 		}
 
-		free(pntr);
 	}
+
+	free(pntr);
 
 	return (0);
 }
